@@ -4,5 +4,8 @@ def collatz(number):
     else:
         return 3 * number + 1
 
-print(collatz(3))
-print(collatz(6))
+user_number = int(input("Enter a number: "))
+
+while user_number > 1:
+    print(f'current user number: {user_number}')
+    user_number = collatz(user_number)

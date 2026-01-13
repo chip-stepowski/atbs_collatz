@@ -6,6 +6,8 @@ def collatz(number):
 
 user_number = int(input("Enter a number: "))
 
-while user_number > 1:
-    print(f'current user number: {user_number}')
+print(user_number)
+
+while user_number != 1:
     user_number = collatz(user_number)
+    print(user_number)
